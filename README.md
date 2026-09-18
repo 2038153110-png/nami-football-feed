@@ -5,6 +5,4 @@
 - 北单 **398** 场
 - 每场字段：`编号` `比赛` `联赛` `开赛时间` `让球` `让球SP` `状态`
 
-## 发给 GPT 的链接
-
-https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/bd-live.json
+https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/bd-latest.json
