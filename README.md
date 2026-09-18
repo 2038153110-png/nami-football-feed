@@ -12,7 +12,7 @@
 
 完整（直播 + 竞彩 75 + 北单 258）
 
-https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/feed.json
+https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/today.json
 
 只要竞彩 75 场
 
@@ -55,4 +55,4 @@ https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/beidan.
 ## 给 GPT 的话
 
 打开这个链接，读取全部「竞彩足球」和「北单」数组，不要只看前几条。每场用「编号」「比赛」「开赛时间」「让球」「胜平负SP」「让球SP」「状态」。SP 为 null 表示该玩法未开售。
-https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/feed.json
+https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/today.json
