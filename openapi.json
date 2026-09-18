@@ -2,8 +2,8 @@
   "openapi": "3.0.3",
   "info": {
     "title": "纳米足球公开数据",
-    "version": "1.1.0",
-    "description": "只读 JSON，无密钥。含北单/竞彩官方让球与SP、开赛时间。直接 GET feed.json。"
+    "version": "1.2.0",
+    "description": "只读 JSON，无密钥。每场含编号、比赛、开赛时间、让球、胜平负SP、让球SP、状态。竞彩75场，北单258场。"
   },
   "servers": [
     { "url": "https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main" }
@@ -12,8 +12,22 @@
     "/feed.json": {
       "get": {
         "operationId": "getFeed",
-        "summary": "直播、竞彩、北单",
+        "summary": "完整：直播 + 竞彩75 + 北单258",
         "responses": { "200": { "description": "JSON feed" } }
+      }
+    },
+    "/jingcai.json": {
+      "get": {
+        "operationId": "getJingcai",
+        "summary": "竞彩足球 75 场",
+        "responses": { "200": { "description": "jingcai" } }
+      }
+    },
+    "/beidan.json": {
+      "get": {
+        "operationId": "getBeidan",
+        "summary": "北单 258 场",
+        "responses": { "200": { "description": "beidan" } }
       }
     }
   }
