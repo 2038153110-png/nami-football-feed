@@ -3,31 +3,67 @@
   "info": {
     "title": "纳米足球公开数据",
     "version": "1.2.0",
-    "description": "只读 JSON，无密钥。每场含编号、比赛、开赛时间、让球、胜平负SP、让球SP、状态。竞彩75场，北单258场。"
+    "description": "只读 JSON，无密钥。每场含开赛时间、让球、胜平负SP、让球SP。SP 为 null 表示未开售。完整 now.json：直播+竞彩74+北单398。"
   },
   "servers": [
-    { "url": "https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main" }
+    {
+      "url": "https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main"
+    }
   ],
   "paths": {
-    "/feed.json": {
+    "/now.json": {
       "get": {
-        "operationId": "getFeed",
-        "summary": "完整：直播 + 竞彩75 + 北单258",
-        "responses": { "200": { "description": "JSON feed" } }
+        "operationId": "getNow",
+        "summary": "直播、竞彩74、北单398",
+        "responses": {
+          "200": {
+            "description": "JSON feed"
+          }
+        }
+      }
+    },
+    "/today.json": {
+      "get": {
+        "operationId": "getToday",
+        "summary": "同 now.json",
+        "responses": {
+          "200": {
+            "description": "JSON feed"
+          }
+        }
       }
     },
     "/jingcai.json": {
       "get": {
         "operationId": "getJingcai",
-        "summary": "竞彩足球 75 场",
-        "responses": { "200": { "description": "jingcai" } }
+        "summary": "竞彩足球 74 场",
+        "responses": {
+          "200": {
+            "description": "jingcai"
+          }
+        }
       }
     },
     "/beidan.json": {
       "get": {
         "operationId": "getBeidan",
-        "summary": "北单 258 场",
-        "responses": { "200": { "description": "beidan" } }
+        "summary": "北单 398 场",
+        "responses": {
+          "200": {
+            "description": "beidan"
+          }
+        }
+      }
+    },
+    "/feed.txt": {
+      "get": {
+        "operationId": "getFeedText",
+        "summary": "纯文本",
+        "responses": {
+          "200": {
+            "description": "text"
+          }
+        }
       }
     }
   }
