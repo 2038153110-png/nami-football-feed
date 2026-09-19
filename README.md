@@ -1,14 +1,17 @@
-# 纳米北单公开数据
+# 纳米竞彩公开数据
 
-无密钥。纳米能查到的北单指数和往期开奖都在这里。
+给 ChatGPT 直接 GET。无密钥。
 
-- 当前北单全玩法 SP：**325** 场 → `bd-open-1802.json`
-- 已开奖北单（比分+开奖 SP）：**169** 场，最近两期 → `bd-settled-1802.json`
-- 合并：**bd-all-1802.json**
-- 官方北单没有初盘→临盘（接口未授权）
+- 竞彩足球当前 **57** 场
+- 竞彩篮球当前 **19** 场
+- 竞彩足球已开奖 **133** 场
+- 竞彩篮球已开奖 **27** 场
 
-当前全玩法：
-https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/bd-open-1802.json
+完整：
+https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/jc-2020.json
 
-已开奖：
-https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/bd-settled-1802.json
+只要当前竞彩足球：
+https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/jc-open-2020.json
+
+已开奖竞彩足球：
+https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/jc-settled-2020.json
