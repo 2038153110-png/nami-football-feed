@@ -1,8 +1,14 @@
 # 纳米北单公开数据
 
-只含北单，给 ChatGPT 直接 GET。无密钥、无登录。
+无密钥。纳米能查到的北单指数和往期开奖都在这里。
 
-- 北单 **328** 场
-- 每场字段：`编号` `比赛` `联赛` `开赛时间` `让球` `让球SP` `状态`
+- 当前北单全玩法 SP：**325** 场 → `bd-open-1802.json`
+- 已开奖北单（比分+开奖 SP）：**169** 场，最近两期 → `bd-settled-1802.json`
+- 合并：**bd-all-1802.json**
+- 官方北单没有初盘→临盘（接口未授权）
 
-https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/bd-1642.json
+当前全玩法：
+https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/bd-open-1802.json
+
+已开奖：
+https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/bd-settled-1802.json
