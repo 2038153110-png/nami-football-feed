@@ -8,10 +8,4 @@
 - 竞彩篮球已开奖 **28** 场
 
 完整：
-https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/jc-2115.json
-
-只要当前竞彩足球：
-https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/jc-open-2115.json
-
-已开奖竞彩足球：
-https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/jc-settled-2115.json
+https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/jc-2140.json
