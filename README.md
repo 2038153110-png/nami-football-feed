@@ -58,3 +58,8 @@ python3 collector/collect.py --out ./out
 3. 赛前锁概率和理由，赛后逐项评分：方向 / 进球数 / 净胜球
 
 暂停的扫盘任务不会被本仓库的 timer 擅自恢复。
+
+## 最新北单快照（给 GPT 读）
+
+当前 142 + 已开奖 352（含让球/总进球/比分 SP）：
+https://raw.githubusercontent.com/2038153110-png/nami-football-feed/main/bd-1734.json
