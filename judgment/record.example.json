@@ -1,0 +1,29 @@
+{
+  "id": "116",
+  "source": "beidan",
+  "match": "凯尔采科罗纳 vs 琴斯托霍瓦",
+  "league": "波兰甲",
+  "kickoff": "2026-09-19 20:40",
+  "locked_at": "2026-09-19 18:00",
+  "uses_odds": false,
+  "odds_ref": {
+    "让球": 0,
+    "让球SP": { "胜": 2.53, "平": 4.43, "负": 2.62 },
+    "总进球SP": { "2": 4.05, "3": 4.33 },
+    "note": "对照用，不参与核心输入"
+  },
+  "strength": {
+    "direction": "客不败",
+    "goal_diff": "0到-1",
+    "reasons": ["对手强弱", "主客", "机会质量", "打法", "人员变化"]
+  },
+  "goals": {
+    "interval": "2-3",
+    "reasons": ["双方转化", "近期失球"]
+  },
+  "disagreement": {
+    "keep": true,
+    "note": "实力偏客不败，进球模型偏 2-3 球；不合并成单一信心"
+  },
+  "result": null
+}

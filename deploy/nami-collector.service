@@ -1,0 +1,14 @@
+[Unit]
+Description=Nami lottery collector (beidan + jingcai)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/nami-collector.env
+WorkingDirectory=/opt/nami-collector
+ExecStart=/usr/bin/python3 /opt/nami-collector/collect.py --out ${OUT_DIR}
+Nice=10
+
+[Install]
+WantedBy=multi-user.target
